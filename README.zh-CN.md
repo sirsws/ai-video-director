@@ -1,139 +1,135 @@
 <p align="center"><a href="README.md">English</a> · <strong>简体中文</strong></p>
 
-<p align="center"><img src="assets/cover.png" alt="Seedance Video Skill：从构想到场景，邵看人生的 AI 视频创作与制作工具包。" width="100%"></p>
+![AI 视频导演：把一个想法，拍成值得看的 AI 视频。邵看人生作品画面。](assets/cover.png)
 
-<h1 align="center">邵看人生的 AI 视频制作 Skill</h1>
+# AI 视频导演
 
-<p align="center"><strong>让一个想法，有故事、有镜头、有声音。</strong><br>
-从构想、声画设计到提示词、审片与剪辑的 Agent Skill。</p>
+**把一个想法，拍成值得看的 AI 视频。**
 
-<p align="center"><a href="#开始使用">开始使用</a> · <a href="examples/rain-pavilion.zh-CN.md">试读完整示例</a> · <a href="skills/jimeng-12s-video/references/methods.md">探索创作方法</a></p>
+由 **[邵看人生 · SIRSWS](https://github.com/sirsws)** 在持续创作与观众反馈中整理的 Agent Skill。一起发展创意，设计表演、镜头和声音，准备生成输入，再根据实际视频返修。适用于你选择的视频模型。
 
-<p align="center">
-<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-244A43?style=flat-square" alt="MIT 开源许可"></a>
-<img src="https://img.shields.io/badge/Agent_Skill-9F422A?style=flat-square" alt="Agent Skill">
-<img src="https://img.shields.io/badge/Creative_routes-25-244A43?style=flat-square" alt="25 类创作入口">
-<img src="https://img.shields.io/badge/English_%2B_中文-F2E8D5?style=flat-square&amp;labelColor=244A43" alt="中英文使用指南">
-</p>
+[先看代表作](#代表作与背后的创作决定) · [安装使用](#开始创作) · [查看方法库](skills/ai-video-director/references/methods.md)
 
-由 **Seedance／即梦平台优质创作者 [邵看人生 · sirsws](https://github.com/sirsws)** 整理维护，来自持续 AI 视频创作中的方法积累。
+## 代表作与背后的创作决定
 
-## 把场景做得值得看
+### 阎王不敢收我
 
-“电影感、唯美、史诗级”仍留下很多空白。这套 Skill 帮你先想清楚：**具体发生什么、镜头怎样让人看见、观众会听到什么**，再形成提示词。
+[![实际发布视频片段：阎王接过账单，威严逐渐变成窘迫。](assets/showcase/underworld.gif)](https://www.douyin.com/video/7694977783864836837)
 
-内容与拍法一起发展：想法怎样变成有看点的行动，人物怎样进入空间，什么时候揭示信息，声音怎样改变一场戏。
+人到了阴间，把没还完的账单递给阎王。原本催命的阎王，反过来求他再活五十年。
 
-| 你手上有什么 | 可以推进到哪里 |
-| :--- | :--- |
-| 一句话、题材或模糊构想 | 有具体观看过程、彼此有实质差异的方向 |
-| 已经选定的构想 | 动作、表演、摄影、光色与声音方案 |
-| 人物图、服装图、场景图 | 明确各图控制身份、造型、空间或起始状态的用途 |
-| 一份初稿提示词 | 适配当前生成入口与实际素材的完整正文 |
-| 实际生成的视频 | 有证据的诊断与针对性返修 |
-| 多段素材 | 接续安排、剪辑方案与已获授权的本地处理 |
+**微信视频号 22 万播放；即梦 2020 次跟拍。** ¹
 
-## 一个小场景，也能设计完整
+一张账单改变双方的强弱关系，造型、表情、对白和阎王的行动一起兑现反差。
 
-**题目：** 旅人走进雨中的亭子，收伞。不打斗，不说话。
+[看实际发布视频 ↗](https://www.douyin.com/video/7694977783864836837) · [看创作拆解](showcase/underworld.zh-CN.md)
 
-| 设计决定 | 它解决什么 |
-| :--- | :--- |
-| 人物到来前，先让亭子进入画面 | 路线和目的地清楚。 |
-| 手、伞与门槛持续入画 | 收伞成为能被看清的动作。 |
-| 水珠甩向干燥长凳之外 | 动作发生在真实的空间关系中。 |
-| 进入亭下时，雨声从头顶退向外部 | 声音带出从淋雨到避雨的变化。 |
+### 这里有个老外，快合个影
 
-**[打开完整示例 →](examples/rain-pavilion.zh-CN.md)**：包含需求、拍法、可复制提示词与成片检查要点。这是文字设计演示，尚未作为视频生成效果验证。
+[![实际发布视频片段：中国游客在悉尼歌剧院前，围着困惑的澳洲本地人合影。](assets/showcase/sydney.gif)](https://www.douyin.com/video/7693037053788959673)
 
-## 开始使用
+国庆中国游客挤满悉尼歌剧院前，澳洲本地人反倒成了大家争相合影的稀罕对象。
 
-把下面的话发给支持 Agent Skills 的助手：
+**微信视频号 30.8 万播放。** ¹
 
-~~~text
-请从 https://github.com/sirsws/seedance-video-skill
-安装 skills/jimeng-12s-video 这个 Skill。
-~~~
+地标交代“在哪儿”，人海改变“谁是少数”，老外的困惑反应把笑点落到人物身上。
 
-也可以下载仓库，将 `skills/jimeng-12s-video` **整个文件夹**放入所用客户端支持的 Skill 目录。保留参考文件、脚本和许可，刷新或重启客户端以加载。
+[看实际发布视频 ↗](https://www.douyin.com/video/7693037053788959673) · [看创作拆解](showcase/sydney.zh-CN.md)
 
-安装后直接说：
+### 今夜，大家都送送他
 
-~~~text
-用 $jimeng-12s-video 做一个 15 秒的雨夜短片。
-旅人走进木亭，收起雨伞，抖落雨水；不打斗，不说话。
-把动作、镜头和声音设计清楚，给我最终视频提示词。
-我自己去平台生成。
-~~~
+[![实际发布视频片段：济公含笑摆扇，沿着街巷走远，邻里留下目送。](assets/showcase/jigong.gif)](https://www.douyin.com/video/7689014871601832057)
 
-调用名保留为 `$jimeng-12s-video` 以兼容已有引用。**名字中的 `12s` 是历史名称，不限制实际时长。** 时长按你的任务和平台确定。
+沿街门窗陆续打开，大家送济公走一程。熟悉的笑容、扇子和离去的背影，完成一次无言告别。
+
+**抖音 3517 赞、276 条评论、309 次收藏。** ²
+
+人物特有的神情和动作，让告别有了具体的情感。作者在济公告别作品的反馈中，特别认可表情、扇子传神，以及音乐的加分。
+
+[看实际发布视频 ↗](https://www.douyin.com/video/7689014871601832057) · [看创作拆解](showcase/jigong.zh-CN.md)
+
+**日常还可以变成大场面：**国庆旅行系列把满山游客变成群侠集结，把敦煌驼队堵车变成骑兵出征。[看旅行到奇观的设计 →](showcase/holiday-spectacle.zh-CN.md)
 
 <details>
-<summary><strong>已有想法或成片？也可以这样开始。</strong></summary>
+<summary>传播数据的日期与来源</summary>
 
-**继续完善选定方向**
+¹ 作者报告的历史快照：《阎王不敢收我》视频号 22 万播放为 2026-10-13，即梦 9.8 万播放、2020 次跟拍为 2026-10-21；《这里有个老外快合个影》视频号 30.8 万播放为 2026-10-08。“跟拍”指其他用户制作同款，不等于播放或点赞。
 
-~~~text
-用 $jimeng-12s-video 深化这个已选定的构想。
-保留核心事件，完善调度、摄影和声音。
-交付视频提示词与完整可复制的参考图制图词。
-~~~
+² 2026-11-08 核对的抖音公开快照。首页只展示多人送行这一部济公作品。
 
-**复核真实生成结果**
-
-~~~text
-用 $jimeng-12s-video 审看这个实际生成的视频。
-区分创意、拍法、提示词、参考图和平台执行的问题。
-依据实际证据，只改受影响的内容，保留已经成立的部分。
-~~~
+动图摘自所链接的实际发布视频。视频号、即梦的数据归属于对应平台，不能视作所链接抖音版本的数据。这些是具体作品的历史表现，不是对后来作品的效果承诺；方法持续迭代，历史作品也不作为当前 Skill 全部指令的效果测试。
 
 </details>
 
-## 工具包里有什么
+## 你可以用它做什么
 
-**任务接入 → 内容与声画共同设计 → 参考输入与提示词 → 检查与交付。**
+从你手上已有的东西继续：一句话、选定构想、参考图、提示词初稿，或实际生成的视频。
 
-| 入口 | 可用内容 |
+| 创作决定 | 一起推进的内容 |
 | :--- | :--- |
-| [25 类创作方法](skills/jimeng-12s-video/references/methods.md) | 叙事、喜剧、悬疑、动作、歌舞、奇观、产品、旅行、动画等 |
-| [摄影、表演与声音技法](skills/jimeng-12s-video/references/techniques/INDEX.md) | 机位、空间、表演、光色、声音、节奏与特效 |
-| [参考图方法](skills/jimeng-12s-video/references/reference-images.md) | 选哪些输入、各自控制什么、应当保留哪些自由 |
-| [完整设计示例](skills/jimeng-12s-video/references/examples.md) | 连续动作、拍摄安排与声音的具体落实 |
-| [片段接续](skills/jimeng-12s-video/references/sequence-and-continuation.md) | 从实际采用的素材衔接下一段 |
-| [剪辑后期](skills/jimeng-12s-video/references/post-production.md) | 素材审看、剪辑决定、本地执行与导出核验 |
+| **为什么值得看？** | 具体的笑点、情感、揭示、表演或变化过程 |
+| **它怎样发生？** | 行动、反应、空间、摄影、光色、节奏与声音一起发展 |
+| **交给模型什么？** | 可复制的视频提示词、按需提供的制图词，以及实际参考素材的用途和绑定 |
+| **结果哪里需要改？** | 审看真实素材，针对问题返修，处理跨段接续与按需剪辑 |
 
-**按当前问题读取所需方法。** 围绕这部作品组合使用，不因选了某种类别就固定剧情、镜头数量或风格。
+交付随本次任务确定：先讨论构想、深化一个方向、交完整制作包，或只改一个问题。你可以自己去平台生成，也可以使用已授权且可用的生成工具。
 
-### 语言与平台适配
+## 开始创作
 
-- **中英文入口与指南。** 详细方法库目前以中文维护；可要求助手用中文或英文交付。
-- **适用于 Seedance／即梦，也可适配其他入口。** 模型、时长、上传方式与身份绑定，以实际使用的 APP、网页、API 或 CLI 为准。
-- **沿用你自己的偏好。** 身份、口味、默认画幅与图库规则，可以写在项目 `AGENTS.md` 中。
-- **生成按授权执行。** Skill 提供方法与本地辅助脚本；实际调用生成服务需有可用工具及你的授权，费用按对应平台规则处理。
+把这段话发给支持 Agent Skills 的助手：
 
-### 可选本地工具
+~~~text
+请从 https://github.com/sirsws/ai-video-director
+安装 skills/ai-video-director 这个 Skill。
+~~~
 
-| 任务 | 所需工具 |
+也可以将 `skills/ai-video-director` 整个文件夹放进所用客户端支持的 Skill 目录，保留参考文件、脚本和许可，再刷新客户端加载。
+
+~~~text
+用 $ai-video-director 做一部好笑的 AI 短片。
+把一个日常烦恼带进奇幻世界。
+给我少量不同构想，每个说清具体行动、关键拍法和观看回报。
+我选定后再深化。
+~~~
+
+已有方向或视频时：
+
+~~~text
+用 $ai-video-director 深化这个已选定的构想。
+保留核心事件，把表演、镜头和声音设计清楚。
+交付完整视频提示词，以及确实有用的参考图制图词。
+我自己去平台生成。
+~~~
+
+~~~text
+用 $ai-video-director 审看这个实际生成的视频。
+指出实际呈现了什么，哪里没达到原本想要的体验。
+针对相关拍法、提示词或输入素材修改，保留已经成立的部分。
+~~~
+
+**模型和时长按任务选择。** 通用方法负责创意与声画；参考素材、身份绑定、音频、时长和提示词语法，按你实际使用的 APP、网页、API 或 CLI 入口适配。平台说明按需读取。本 Skill 不自带通用生成接口，也不声称各模型表现相同。
+
+**中英文入口与指南。** 详细方法库目前以中文维护，可要求助手用你需要的语言交付。安装过旧版的用户，请用 `ai-video-director` 替换旧 Skill 文件夹，改用上面的新调用名。
+
+## 方法库里有什么
+
+| 当前需要 | 方法入口 |
 | :--- | :--- |
-| 构想、拍法与提示词 | 能读取 Skill 的助手 |
-| 本地裁剪、拼接与字幕 | Python 3.10+、FFmpeg 与 ffprobe |
-| 确定性 Alpha 处理 | Python 与 Pillow |
-| 摄影与调度几何预演 | Blender |
+| 找到适合本片的做法 | [25 类创作方法](skills/ai-video-director/references/methods.md)：喜剧、叙事、动作、音乐、奇观、产品、旅行、动画等 |
+| 落实拍法 | [摄影、表演、光色、声音与节奏](skills/ai-video-director/references/techniques/INDEX.md) |
+| 选择有用的输入 | [参考图用途与取舍](skills/ai-video-director/references/reference-images.md) |
+| 多段连续创作 | [片段接续](skills/ai-video-director/references/sequence-and-continuation.md) |
+| 审看与剪辑真实视频 | [后期流程](skills/ai-video-director/references/post-production.md) |
+| 学一个小场景的完整设计 | [雨亭入门教程](examples/rain-pavilion.zh-CN.md)，文字设计练习 |
 
-只安装当前任务所需的工具。制作包与成片分别交付和判断；生成后的运动、口型与声音，仍需实际审看。
+按当前场景读取，不固定题材、镜数或剧情公式。
 
-## 开放交流与来源
+构想和提示词只需能读取 Skill 的助手。本地辅助工具按需安装：Python 3.10+、用于剪辑的 FFmpeg/ffprobe、用于 Alpha 处理的 Pillow，以及用于几何预演的 Blender。生成服务另有各自的工具、访问条件与费用。
 
-整理过程中参考并融合了 [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance)、[Emily2040/seedance-2.0](https://github.com/Emily2040/seedance-2.0)、[zenstory-ai/drama-skills](https://github.com/zenstory-ai/drama-skills)、[liangdabiao/Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator)、[dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill) 和 [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) 的方法与思路，感谢原作者。
+## 来源与交流
 
-具体范围、固定版本与许可见[来源说明](THIRD_PARTY_NOTICES.zh-CN.md)。原创内容采用 [MIT 许可](LICENSE)，第三方许可分别保留。本项目由独立创作者维护，非 Seedance／即梦官方产品。
+方法整理参考了 [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance)、[Emily2040/seedance-2.0](https://github.com/Emily2040/seedance-2.0)、[zenstory-ai/drama-skills](https://github.com/zenstory-ai/drama-skills)、[liangdabiao/Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator)、[dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill) 和 [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage)。感谢原作者。[具体来源、版本与许可 →](THIRD_PARTY_NOTICES.zh-CN.md)
 
-**用它做出了作品？** 欢迎[分享用法或提出改进](CONTRIBUTING.md)。可复核的实际观察，能帮助这套方法持续完善。
+原创 Skill 指令、代码与文档采用 MIT 许可；展示影像适用[单独的媒体说明](assets/README.md)。本项目由邵看人生独立维护。
 
----
-
-<p align="center"><strong>如果它帮你做出了更好的视频，欢迎点一颗 Star。</strong><br>
-让更多创作者找到这套方法。<br><br>
-<a href="https://github.com/sirsws/seedance-video-skill">在 GitHub 收藏</a> ·
-<a href="https://github.com/sirsws/seedance-video-skill/issues">反馈与交流</a> ·
-<a href="README.md">Read in English</a></p>
+欢迎[分享作品、改进方法或贡献翻译](CONTRIBUTING.md)。如果它帮你做出了更好的视频，欢迎[点一颗 Star](https://github.com/sirsws/ai-video-director)。

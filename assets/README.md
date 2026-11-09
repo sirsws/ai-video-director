@@ -1,7 +1,11 @@
-# Cover artwork
+# Showcase media and cover
 
-The cover is an original, editable SVG diagram of camera blocking, a subject's path, and a transition in sound. Its PNG export is used in the README for consistent display. It illustrates the method and is not a generated-video result or a performance claim.
+The cover combines original typography and layout with stills from three AI videos published by SIRSWS. The GIF previews in `showcase/` are silent excerpts from the same published works. Their source links are on the corresponding English and Chinese showcase pages. Stills and loops preserve the source aspect ratio and visible source markings. The loops are display excerpts, not newly generated videos.
 
-Lettering uses outlines rendered from **Bricolage Grotesque**, distributed by [Google Fonts](https://fonts.google.com/specimen/Bricolage+Grotesque). The font is under the [SIL Open Font License](https://openfontlicense.org/); no font binary is bundled. The original cover artwork is covered by this repository's MIT license.
+The cover's Latin lettering uses **Bricolage Grotesque**, distributed by [Google Fonts](https://fonts.google.com/specimen/Bricolage+Grotesque) under the [SIL Open Font License](https://openfontlicense.org/). No font binary is bundled.
 
-封面为原创可编辑 SVG，以机位、主体路径和声音变化说明制作方法，不作为视频生成效果证明。字体使用 Bricolage Grotesque 的字形轮廓，未附带字体文件；封面原创内容适用本仓库 MIT 许可。
+The repository's MIT license covers original skill instructions, code, and documentation. **The showcase GIFs, stills, and cover incorporating film imagery are excluded from that license.** They are supplied for viewing in this project. No broader reuse license is granted here for the footage or for any depicted likeness, character, trademark, or underlying music. Original rights remain with their respective holders.
+
+封面采用邵看人生三部实际发布视频的画面及原创排版；`showcase/` 中的 GIF 是同片静音节选，来源链接见各作品中英文拆解页。画面保留原比例与可见来源标记，没有重新生成影像。字体使用 Bricolage Grotesque，未附字体文件。
+
+仓库 MIT 许可适用于原创 Skill 指令、代码与文档；**展示动图、截图和含成片画面的封面不纳入 MIT 授权**。这些材料供本项目展示，不在此另行授予影像、人物形象、角色、商标或原配乐的使用许可，各项权利归相应权利人。

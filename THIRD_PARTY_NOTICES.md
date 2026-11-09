@@ -8,13 +8,13 @@ The skill incorporates adapted material from **LearnPrompt/awesome-seedance**, *
 
 | Source | Bundled notice |
 | --- | --- |
-| LearnPrompt | [MIT](skills/jimeng-12s-video/references/licenses/learnprompt.LICENSE.txt) |
-| Iamemily2050 / Emily2040 | [MIT](skills/jimeng-12s-video/references/creative-read.LICENSE.txt) |
-| drama-skills contributors | [MIT](skills/jimeng-12s-video/references/licenses/drama.LICENSE.txt) |
-| Dex / dexhunter | [MIT](skills/jimeng-12s-video/references/licenses/dexhunter.LICENSE.txt) |
+| LearnPrompt | [MIT](skills/ai-video-director/references/licenses/learnprompt.LICENSE.txt) |
+| Iamemily2050 / Emily2040 | [MIT](skills/ai-video-director/references/creative-read.LICENSE.txt) |
+| drama-skills contributors | [MIT](skills/ai-video-director/references/licenses/drama.LICENSE.txt) |
+| Dex / dexhunter | [MIT](skills/ai-video-director/references/licenses/dexhunter.LICENSE.txt) |
 
 **liangdabiao/Seedance2-Storyboard-Generator** and **calesthio/OpenMontage** informed methodological research. Their original texts, cases, assets, workflows, and code are not distributed in this package. Their upstream terms are not replaced by this project's MIT license.
 
-See the [detailed source map](skills/jimeng-12s-video/references/third-party-notices.md) for pinned versions, specific use, and upstream terms. References do not imply author participation or endorsement. Source-project licenses do not grant rights to linked videos, music, likenesses, brands, or other third-party assets.
+See the [detailed source map](skills/ai-video-director/references/third-party-notices.md) for pinned versions, specific use, and upstream terms. References do not imply author participation or endorsement. Source-project licenses do not grant rights to linked videos, music, likenesses, brands, or other third-party assets.
 
 The English skill entry is a translation of the Chinese entry; the methods and their attribution are retained.

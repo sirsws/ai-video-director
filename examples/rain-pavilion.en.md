@@ -2,7 +2,7 @@
 
 [English](rain-pavilion.en.md) · [简体中文](rain-pavilion.zh-CN.md) · [Back to the project](../README.md)
 
-**A worked design example.** This page demonstrates the method; it is not a measured or verified video-generation result. The cover is an original blocking diagram, not a model output.
+**A worked design example.** This page demonstrates the method; it is not a measured or verified video-generation result. For actual published work, see the [film showcase](../README.md#films-and-the-decisions-behind-them).
 
 ## The brief
 

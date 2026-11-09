@@ -1,4 +1,0 @@
-interface:
- display_name: "AI Video Direction & Production"
- short_description: "Direct AI videos from concepts to prompts, review and editing"
- default_prompt: "Use $jimeng-12s-video to develop my video concept, staging, camera and sound, then deliver the agreed production package. Review or edit actual footage when requested. Respond in my preferred language."

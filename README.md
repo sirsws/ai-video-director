@@ -1,141 +1,135 @@
 <p align="center"><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
 
-<p align="center"><img src="assets/cover.png" alt="Seedance Video Skill — From idea to scene. A creator's toolkit for directing AI video." width="100%"></p>
+![AI Video Director — Make an idea worth watching. Films by SIRSWS.](assets/cover.png)
 
-<h1 align="center">Seedance Video Skill</h1>
+# AI Video Director
 
-<p align="center"><strong>Give your idea a story, a camera, and a sound.</strong><br>
-An Agent Skill for directing AI videos, from the first idea to prompts, footage review, and editing.</p>
+**Make an idea worth watching.**
 
-<p align="center">
-<a href="#quick-start">Get started</a> · <a href="examples/rain-pavilion.en.md">Try a complete example</a> · <a href="skills/jimeng-12s-video/references/methods.md">Explore the methods</a>
-</p>
+An Agent Skill by **[SIRSWS](https://github.com/sirsws)** for developing AI videos: the idea, the performance, the camera, the sound, and the revisions after generation. Built through ongoing creative work and audience feedback. Use it with the video models you choose.
 
-<p align="center">
-<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-244A43?style=flat-square" alt="MIT license"></a>
-<img src="https://img.shields.io/badge/Agent_Skill-9F422A?style=flat-square" alt="Agent Skill">
-<img src="https://img.shields.io/badge/Creative_routes-25-244A43?style=flat-square" alt="25 creative routes">
-<img src="https://img.shields.io/badge/English_%2B_中文-F2E8D5?style=flat-square&amp;labelColor=244A43" alt="English and Chinese guides">
-</p>
+[Watch the work](#films-and-the-decisions-behind-them) · [Install the skill](#start-making) · [Explore the methods](skills/ai-video-director/references/methods.md)
 
-Created by **[SIRSWS](https://github.com/sirsws)**, an AI video creator on Seedance / Jimeng. An independently maintained workflow developed through ongoing AI video creation.
+## Films and the decisions behind them
 
-## Make the scene worth watching
+### Even the King of the Underworld Won't Take Me
 
-“Cinematic. Beautiful. Epic.” leaves a lot for a model to guess. This skill helps you work out **what happens, how the camera reveals it, and what the audience hears** before compiling the prompt.
+[![Actual published footage: the King of the Underworld reads a bill and loses his composure.](assets/showcase/underworld.gif)](https://www.douyin.com/video/7694977783864836837)
 
-Content and filmmaking choices develop together: the action that makes an idea interesting, the space an actor moves through, the cut that reveals something, and the sound that changes the scene.
+An ordinary man brings his unpaid bills to the afterlife. The terrifying ruler suddenly wants him to live another fifty years.
 
-| Bring this | Work toward this |
+**220,000 views on WeChat Channels. 2,020 remakes on Jimeng.** ¹
+
+The bill changes who holds the power. Costume, expression, dialogue, and the ruler's movement make that reversal visible.
+
+[Watch the published video ↗](https://www.douyin.com/video/7694977783864836837) · [Read the directing notes](showcase/underworld.en.md)
+
+### There's a Foreigner! Let's Take a Photo
+
+[![Actual published footage: Chinese holidaymakers surround a bewildered Australian at the Sydney Opera House.](assets/showcase/sydney.gif)](https://www.douyin.com/video/7693037053788959673)
+
+Chinese holidaymakers fill the Sydney Opera House waterfront. An Australian local becomes the rare sight everyone wants a photo with.
+
+**308,000 views on WeChat Channels.** ¹
+
+The landmark establishes where we are; the crowd changes what feels normal. A local's puzzled reaction completes the joke.
+
+[Watch the published video ↗](https://www.douyin.com/video/7693037053788959673) · [Read the directing notes](showcase/sydney.en.md)
+
+### Tonight, We All See Him Off
+
+[![Actual published footage: Ji Gong smiles with his fan and walks down a lane as neighbors see him off.](assets/showcase/jigong.gif)](https://www.douyin.com/video/7689014871601832057)
+
+A farewell to Ji Gong, a beloved Chinese fictional monk. Doors and windows open along a lane; a familiar smile and a fan carry the goodbye.
+
+**3,517 likes, 276 comments, 309 saves on Douyin.** ²
+
+A character's particular gestures and the people who stay behind give the farewell its emotional shape. In feedback on the farewell films, the creator singled out the expression, fan work, and music.
+
+[Watch the published video ↗](https://www.douyin.com/video/7689014871601832057) · [Read the directing notes](showcase/jigong.en.md)
+
+**Everyday moments can become spectacles, too.** The National Day travel films turn a crowded mountain path into a martial-arts assembly, and a camel-tour traffic jam into a cavalry departure. [Explore the travel-to-spectacle designs →](showcase/holiday-spectacle.en.md)
+
+<details>
+<summary>Dates and sources for the audience figures</summary>
+
+¹ Creator-reported snapshots: *Underworld*, WeChat Channels 220,000 views on October 13, 2026; Jimeng 98,000 views and 2,020 remakes on October 21. *Sydney*, WeChat Channels 308,000 views on October 8. A remake is another user's “make the same” creation, not a view or a like.
+
+² Public Douyin snapshot on November 8, 2026. Only the group-farewell film is featured here.
+
+Preview loops are excerpts from the linked published videos. WeChat Channels and Jimeng figures belong to those platforms, not the linked Douyin copies. Figures are dated observations of these works, not a promise of future performance. Historical films do not benchmark every instruction in the evolving skill.
+
+</details>
+
+## What you make with it
+
+Bring an idea, a chosen concept, reference images, a rough prompt, or actual generated footage. Work from whatever you already have.
+
+| Creative decision | What the skill helps you develop |
 | :--- | :--- |
-| An idea or a theme | Distinct directions with a concrete viewing experience |
-| A chosen concept | Actions, performances, camera choices, light, and sound |
-| Reference images | Clear roles for identity, costume, setting, and starting state |
-| A rough prompt | A coherent prompt matched to the actual generation entry point |
-| Generated footage | Evidence-based review and targeted revisions |
-| Several clips | Continuity decisions, an edit plan, and authorized local processing |
+| **Why watch?** | A specific experience: a joke that lands, a moving encounter, a reveal, a performance, or a spectacular change |
+| **How does it happen?** | Actions, reactions, space, camera position, light, pacing, and sound developed together |
+| **What should the model receive?** | Copyable video prompts, image prompts when useful, and clear roles for actual reference inputs |
+| **What needs changing?** | Review of actual footage, targeted revisions, continuity between clips, and editing when requested |
 
-## A small scene, fully directed
+Ask for ideas, deepen one direction, get a production package, or repair a specific problem. Generate the video yourself or use an available, authorized tool.
 
-**The brief:** A traveler enters a pavilion in the rain and closes an umbrella. No fight. No dialogue.
-
-| Decision | What it changes |
-| :--- | :--- |
-| Show the shelter before the traveler arrives | The path and destination are clear. |
-| Keep the hands, umbrella, and threshold in frame | Closing the umbrella becomes a readable action. |
-| Send the spray away from the dry bench | The action belongs to a real space. |
-| Let the rain recede as the traveler steps inside | Sound carries the change from exposure to shelter. |
-
-**[Read the complete example →](examples/rain-pavilion.en.md)** — brief, shot design, a copyable prompt, and what to check in the result. A worked design example, not a generated-video benchmark.
-
-## Quick start
+## Start making
 
 Send this to an assistant that supports Agent Skills:
 
 ~~~text
-Install the skill at skills/jimeng-12s-video from
-https://github.com/sirsws/seedance-video-skill
+Install skills/ai-video-director from
+https://github.com/sirsws/ai-video-director
 ~~~
 
-Or download the repository and copy the **entire** `skills/jimeng-12s-video` folder into your client's supported skills directory. Keep the references, scripts, and licenses together; reload your client to discover the skill.
-
-Then try:
+Or copy the entire `skills/ai-video-director` folder into your client's supported skills directory. Keep its references, scripts, and licenses together; reload the client to discover it.
 
 ~~~text
-Use $jimeng-12s-video to develop a 15-second rainy-night short.
-A traveler enters a wooden pavilion, closes an umbrella, and shakes off the rain.
-No fighting or dialogue. Work out the action, camera, and sound.
-Give me the final video prompt in English. I will generate it myself.
+Use $ai-video-director to develop a funny AI short.
+An everyday frustration spills into a fantasy world.
+Give me a few distinct ideas, each with a concrete action,
+a key camera choice, and a payoff. I'll choose one to develop.
 ~~~
 
-The invocation name is kept for compatibility. **`12s` is a legacy name, not a duration limit.** Use the duration supported by your task and platform.
-
-<details>
-<summary><strong>Already have a concept or footage? Try these.</strong></summary>
-
-**Develop a chosen idea**
+Already have something?
 
 ~~~text
-Use $jimeng-12s-video to develop this chosen concept.
-Keep the central event. Improve the staging, camera, and sound.
-Deliver the video prompt and copyable reference-image prompts in English.
+Use $ai-video-director to develop this chosen concept.
+Keep the central event. Work out the performance, camera, and sound.
+Deliver the video prompt and useful reference-image prompts in English.
+I will generate the video myself.
 ~~~
-
-**Review a real result**
 
 ~~~text
-Use $jimeng-12s-video to review this actual generated video.
-Separate problems in the concept, staging, prompt, references, and execution.
-Revise only what the evidence calls for. Preserve what works.
+Use $ai-video-director to review this actual generated video.
+Identify what the footage shows and what misses my intended experience.
+Revise the relevant staging, prompt, or inputs. Preserve what works.
 ~~~
 
-</details>
+**Different models, different durations.** The creative method is shared; reference support, identity binding, audio, duration, and prompt syntax follow your actual app, web, API, or CLI entry point. Platform notes are read when relevant. The skill does not include a universal generation API or guarantee equal results across models.
 
-## The toolkit
+**English and Chinese guides.** Detailed methods are currently maintained in Chinese. Ask your assistant to deliver in your preferred language. If you installed an earlier version, replace its old skill folder with `ai-video-director` and use the new invocation above.
 
-**Brief → Scene design → Reference inputs & prompt → Review & delivery**
+## Inside the skill
 
-| Explore | What you will find |
+| Need | Open |
 | :--- | :--- |
-| [25 creative routes](skills/jimeng-12s-video/references/methods.md) | Narrative, comedy, suspense, action, dance, spectacle, products, travel, animation, and more |
-| [Filmmaking techniques](skills/jimeng-12s-video/references/techniques/INDEX.md) | Camera, staging, performance, light, sound, rhythm, and effects |
-| [Reference-image decisions](skills/jimeng-12s-video/references/reference-images.md) | Which inputs are useful, what they control, and what they should leave open |
-| [Worked designs](skills/jimeng-12s-video/references/examples.md) | Complete action, camera, and sound treatments |
-| [Continuity](skills/jimeng-12s-video/references/sequence-and-continuation.md) | Continuing from actual accepted material across clips |
-| [Editing](skills/jimeng-12s-video/references/post-production.md) | Source review, edit decisions, local execution, and export checks |
+| Find an approach | [25 creative routes](skills/ai-video-director/references/methods.md): comedy, narrative, action, music, spectacle, products, travel, animation, and more |
+| Make filming choices | [Camera, performance, light, sound, and rhythm](skills/ai-video-director/references/techniques/INDEX.md) |
+| Choose useful inputs | [Reference-image decisions](skills/ai-video-director/references/reference-images.md) |
+| Continue across clips | [Continuity](skills/ai-video-director/references/sequence-and-continuation.md) |
+| Review and edit footage | [Post-production](skills/ai-video-director/references/post-production.md) |
+| Study a small exercise | [Rain-pavilion tutorial](examples/rain-pavilion.en.md), a written design exercise |
 
-**Read only what the task needs.** Methods are combined around the scene; a category does not force a plot, shot count, or visual style.
+Read what the scene needs. No fixed genre, shot count, or plot formula.
 
-### Languages and platform fit
+For ideas and prompts, an assistant that can read the skill is enough. Optional helpers use Python 3.10+, FFmpeg/ffprobe for editing, Pillow for alpha processing, or Blender for geometric camera previews. Install only what your task needs. Generation services have their own tools, access, and fees.
 
-- **English and Chinese entry guides.** The detailed method library is currently maintained in Chinese. Ask your agent for English or Chinese deliverables.
-- **Seedance / Jimeng, with adaptable methods.** Models, duration, upload formats, and identity binding follow the actual app, web, API, or CLI you use.
-- **Bring your preferences.** Put identity, taste, format defaults, and asset-library rules in your project's `AGENTS.md`.
-- **Generation is a separate action.** The skill provides methods and local helpers. Calling a generation service requires an available tool and your authorization; fees follow that platform.
+## Sources and contributions
 
-### Optional local tools
+Methods draw on [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance), [Emily2040/seedance-2.0](https://github.com/Emily2040/seedance-2.0), [zenstory-ai/drama-skills](https://github.com/zenstory-ai/drama-skills), [liangdabiao/Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator), [dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill), and [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage). Thank you to their authors. [Attribution, versions, and licenses →](THIRD_PARTY_NOTICES.md)
 
-| Task | Dependency |
-| :--- | :--- |
-| Ideas, scene design, and prompts | An assistant that can read the skill |
-| Local trimming, assembly, and captions | Python 3.10+, FFmpeg, and ffprobe |
-| Deterministic alpha processing | Python and Pillow |
-| Geometric camera / blocking previews | Blender |
+Original skill instructions, code, and documentation are MIT licensed. Showcase footage has [separate media terms](assets/README.md). Independent project by SIRSWS.
 
-Install only what your task needs. A written production package and a finished video are separate deliverables; generated motion, lip-sync, and sound still need actual review.
-
-## Built in the open
-
-This workflow draws on [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance), [Emily2040/seedance-2.0](https://github.com/Emily2040/seedance-2.0), [zenstory-ai/drama-skills](https://github.com/zenstory-ai/drama-skills), [liangdabiao/Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator), [dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill), and [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage). Thank you to their authors.
-
-See [source attribution and third-party notices](THIRD_PARTY_NOTICES.md) for scope, pinned versions, and licenses. Original work is [MIT licensed](LICENSE); third-party terms are preserved. Independent project; not an official Seedance / Jimeng product.
-
-**Made something with it?** [Share a workflow or suggest an improvement](CONTRIBUTING.md). Reproducible observations help make the methods better.
-
----
-
-<p align="center"><strong>If this helps you make a better video, give the project a star.</strong><br>
-It helps other creators find the workflow.<br><br>
-<a href="https://github.com/sirsws/seedance-video-skill">Star on GitHub</a> ·
-<a href="https://github.com/sirsws/seedance-video-skill/issues">Share feedback</a> ·
-<a href="README.zh-CN.md">阅读中文版</a></p>
+[Share a work, improve a method, or contribute a translation](CONTRIBUTING.md). If the skill helps you make a better video, [give it a star](https://github.com/sirsws/ai-video-director).
