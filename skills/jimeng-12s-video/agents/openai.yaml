@@ -1,4 +1,4 @@
 interface:
- display_name: "AI 短视频创作与制作"
- short_description: "完善内容、表演与声画，交付适配生成入口的制作包，支持审片、接续、返修与剪辑"
- default_prompt: "使用 $jimeng-12s-video 完善我的作品构想与声画设计，按本次范围完成制作包；已有视频时按我的要求审看或剪辑。"
+ display_name: "AI Video Direction & Production"
+ short_description: "Direct AI videos from concepts to prompts, review and editing"
+ default_prompt: "Use $jimeng-12s-video to develop my video concept, staging, camera and sound, then deliver the agreed production package. Review or edit actual footage when requested. Respond in my preferred language."

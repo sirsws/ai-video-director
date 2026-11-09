@@ -1,79 +1,141 @@
-# 邵看人生的 AI 视频制作 Skill
+<p align="center"><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
 
-**Seedance／即梦平台优质创作者「邵看人生」的 AI 视频创作与制作方法。**
+<p align="center"><img src="assets/cover.png" alt="Seedance Video Skill — From idea to scene. A creator's toolkit for directing AI video." width="100%"></p>
 
-将一句构想逐步发展为具体的内容、人物表演、摄影、节奏和声音，再形成可用于生成的视频提示词与参考图方案。已有成片时，也可以用它审看问题、设计局部返修、衔接连续片段或完成本地剪辑。
+<h1 align="center">Seedance Video Skill</h1>
 
-作者：[邵看人生 · sirsws](https://github.com/sirsws)。这是个人创作实践中整理的方法，适合 Seedance／即梦，也可按实际能力适配其他 AI 视频平台。项目由独立创作者维护。
+<p align="center"><strong>Give your idea a story, a camera, and a sound.</strong><br>
+An Agent Skill for directing AI videos, from the first idea to prompts, footage review, and editing.</p>
 
-## 可以做什么
+<p align="center">
+<a href="#quick-start">Get started</a> · <a href="examples/rain-pavilion.en.md">Try a complete example</a> · <a href="skills/jimeng-12s-video/references/methods.md">Explore the methods</a>
+</p>
 
-| 你手上有什么 | 可以推进到哪里 |
-| --- | --- |
-| 一句话、题材或模糊构想 | 找到值得看的具体过程，比较少量有实质差异的方向 |
-| 已经选定的故事或拍法 | 完善动作、人物互动、镜头、声音与观看节奏 |
-| 人物图、服装图、场景图 | 判断各图的用途，组织参考输入，编写完整制图词 |
-| 一份视频提示词 | 检查表达是否落实已定方案，按实际平台与素材编译 |
-| 实际生成的视频 | 根据实际素材分析问题，保留有效内容，局部返修 |
-| 多段素材 | 设计接续、剪辑、字幕与声音安排，按授权执行本地处理 |
+<p align="center">
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-244A43?style=flat-square" alt="MIT license"></a>
+<img src="https://img.shields.io/badge/Agent_Skill-9F422A?style=flat-square" alt="Agent Skill">
+<img src="https://img.shields.io/badge/Creative_routes-25-244A43?style=flat-square" alt="25 creative routes">
+<img src="https://img.shields.io/badge/English_%2B_中文-F2E8D5?style=flat-square&amp;labelColor=244A43" alt="English and Chinese guides">
+</p>
 
-随包提供 **25 类方法入口**，覆盖叙事、对白、喜剧、悬疑、动作、歌舞、奇观、产品、旅行、动画等方向；摄影、表演、声音和输入方法按当前问题组合使用。
+Created by **[邵看人生 · Shao Kan Ren Sheng](https://github.com/sirsws)**, an AI video creator on Seedance / Jimeng. An independently maintained workflow developed through ongoing AI video creation.
 
-## 安装与开始使用
+## Make the scene worth watching
 
-把下面这句话发给支持 Agent Skills 的助手：
+“Cinematic. Beautiful. Epic.” leaves a lot for a model to guess. This skill helps you work out **what happens, how the camera reveals it, and what the audience hears** before compiling the prompt.
 
-> 请从 https://github.com/sirsws/seedance-video-skill 安装 `skills/jimeng-12s-video`，并读取其中的 SKILL.md。
+Content and filmmaking choices develop together: the action that makes an idea interesting, the space an actor moves through, the cut that reveals something, and the sound that changes the scene.
 
-也可以下载本仓库，将 `skills/jimeng-12s-video` **整个文件夹**放到所用客户端支持的 Skill 目录，保留 `references/`、`scripts/` 和 `agents/`，然后刷新或重启客户端以加载。
+| Bring this | Work toward this |
+| :--- | :--- |
+| An idea or a theme | Distinct directions with a concrete viewing experience |
+| A chosen concept | Actions, performances, camera choices, light, and sound |
+| Reference images | Clear roles for identity, costume, setting, and starting state |
+| A rough prompt | A coherent prompt matched to the actual generation entry point |
+| Generated footage | Evidence-based review and targeted revisions |
+| Several clips | Continuity decisions, an edit plan, and authorized local processing |
 
-调用名称保留为 `$jimeng-12s-video`，便于兼容已有引用。名字中的 `12s` 是历史名称，实际时长按你的任务与生成入口确定。
+## A small scene, fully directed
 
-安装后可以直接说：
+**The brief:** A traveler enters a pavilion in the rain and closes an umbrella. No fight. No dialogue.
 
-```text
-用 $jimeng-12s-video 做一个雨夜武侠短片。
-主角只进亭、收伞、抖落雨水，不打斗。
-先把动作与拍法设计清楚，再给我视频提示词。
-```
+| Decision | What it changes |
+| :--- | :--- |
+| Show the shelter before the traveler arrives | The path and destination are clear. |
+| Keep the hands, umbrella, and threshold in frame | Closing the umbrella becomes a readable action. |
+| Send the spray away from the dry bench | The action belongs to a real space. |
+| Let the rain recede as the traveler steps inside | Sound carries the change from exposure to shelter. |
 
-```text
-我已经选定这个构想，请继续完善摄影和声音。
-只交付提示词和完整参考图制图词，我自己去平台生成。
-```
+**[Read the complete example →](examples/rain-pavilion.en.md)** — brief, shot design, a copyable prompt, and what to check in the result. A worked design example, not a generated-video benchmark.
 
-```text
-这是实际生成的视频。请看问题出在动作设计、参考图还是平台执行，
-只改受影响的部分，保留已经成立的内容。
-```
+## Quick start
 
-## 怎么工作
+Send this to an assistant that supports Agent Skills:
 
-**接入已有要求 → 内容与声画共同设计 → 参考输入与提示词 → 检查与交付。**
+~~~text
+Install the skill at skills/jimeng-12s-video from
+https://github.com/sirsws/seedance-video-skill
+~~~
 
-已有方向就继续深化，局部修改就围绕反馈处理；全新方向才探索不同构想。希望先看想法、只要提示词或暂不出图，直接说明即可。
+Or download the repository and copy the **entire** `skills/jimeng-12s-video` folder into your client's supported skills directory. Keep the references, scripts, and licenses together; reload your client to discover the skill.
 
-个人形象、默认画幅、平台入口、偏好与图库，可以写在自己的项目 `AGENTS.md` 中。Skill 根据当前项目配置工作，普通 AI 人物也能直接使用。
+Then try:
 
-生成平台、模型、可用时长、参考素材与身份绑定方式，以你实际使用的入口为准。APP、网页、API 和 CLI 分别适配；需要直接执行生成时，使用另行配置且已获授权的工具。此 Skill 自身提供创作方法与本地辅助脚本，平台的会员、费用和生成权益按对应服务规则处理。
+~~~text
+Use $jimeng-12s-video to develop a 15-second rainy-night short.
+A traveler enters a wooden pavilion, closes an umbrella, and shakes off the rain.
+No fighting or dialogue. Work out the action, camera, and sound.
+Give me the final video prompt in English. I will generate it myself.
+~~~
 
-## 文件入口
+The invocation name is kept for compatibility. **`12s` is a legacy name, not a duration limit.** Use the duration supported by your task and platform.
 
-- [Skill 主入口](skills/jimeng-12s-video/SKILL.md)：工作方式和按需阅读路线。
-- [25 类创作方法](skills/jimeng-12s-video/references/methods.md)：从具体创作问题选择方法。
-- [摄影、表演、声音等技法](skills/jimeng-12s-video/references/techniques/INDEX.md)：需要时再深入。
-- [完整方法示例](skills/jimeng-12s-video/references/examples.md)：看内容、拍法与声音如何落实。
-- [参考图方法](skills/jimeng-12s-video/references/reference-images.md)：组织身份、造型、场景与状态输入。
-- [成片剪辑](skills/jimeng-12s-video/references/post-production.md)：根据实际媒体执行与核验。
+<details>
+<summary><strong>Already have a concept or footage? Try these.</strong></summary>
 
-日常写构想和提示词，读取相应方法即可。本地剪辑需要 Python 3.10+ 与 FFmpeg／ffprobe；Alpha 处理需要 Pillow；几何预演需要 Blender。只安装当前任务用到的工具。
+**Develop a chosen idea**
 
-制作包完成与成片完成分别判断。生成结果需要实际审看；静态画面、机器转写或参数检查，不能代替对运动、口型和声音的核验。创意判断也不承诺传播效果。
+~~~text
+Use $jimeng-12s-video to develop this chosen concept.
+Keep the central event. Improve the staging, camera, and sound.
+Deliver the video prompt and copyable reference-image prompts in English.
+~~~
 
-## 参考与致谢
+**Review a real result**
 
-整理过程中参考并融合了 [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance)、[Emily2040/seedance-2.0](https://github.com/Emily2040/seedance-2.0)、[zenstory-ai/drama-skills](https://github.com/zenstory-ai/drama-skills)、[liangdabiao/Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator)、[dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill) 和 [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) 的方法与思路，感谢原作者。
+~~~text
+Use $jimeng-12s-video to review this actual generated video.
+Separate problems in the concept, staging, prompt, references, and execution.
+Revise only what the evidence calls for. Preserve what works.
+~~~
 
-具体采用范围、固定版本与第三方许可见[来源与许可说明](THIRD_PARTY_NOTICES.md)。各来源的要求分别保留；来源作者与 Seedance／即梦平台未参与本项目维护。
+</details>
 
-本项目原创内容采用 [MIT 许可](LICENSE)；第三方改编部分保留对应版权与许可说明。
+## The toolkit
+
+**Brief → Scene design → Reference inputs & prompt → Review & delivery**
+
+| Explore | What you will find |
+| :--- | :--- |
+| [25 creative routes](skills/jimeng-12s-video/references/methods.md) | Narrative, comedy, suspense, action, dance, spectacle, products, travel, animation, and more |
+| [Filmmaking techniques](skills/jimeng-12s-video/references/techniques/INDEX.md) | Camera, staging, performance, light, sound, rhythm, and effects |
+| [Reference-image decisions](skills/jimeng-12s-video/references/reference-images.md) | Which inputs are useful, what they control, and what they should leave open |
+| [Worked designs](skills/jimeng-12s-video/references/examples.md) | Complete action, camera, and sound treatments |
+| [Continuity](skills/jimeng-12s-video/references/sequence-and-continuation.md) | Continuing from actual accepted material across clips |
+| [Editing](skills/jimeng-12s-video/references/post-production.md) | Source review, edit decisions, local execution, and export checks |
+
+**Read only what the task needs.** Methods are combined around the scene; a category does not force a plot, shot count, or visual style.
+
+### Languages and platform fit
+
+- **English and Chinese entry guides.** The detailed method library is currently maintained in Chinese. Ask your agent for English or Chinese deliverables.
+- **Seedance / Jimeng, with adaptable methods.** Models, duration, upload formats, and identity binding follow the actual app, web, API, or CLI you use.
+- **Bring your preferences.** Put identity, taste, format defaults, and asset-library rules in your project's `AGENTS.md`.
+- **Generation is a separate action.** The skill provides methods and local helpers. Calling a generation service requires an available tool and your authorization; fees follow that platform.
+
+### Optional local tools
+
+| Task | Dependency |
+| :--- | :--- |
+| Ideas, scene design, and prompts | An assistant that can read the skill |
+| Local trimming, assembly, and captions | Python 3.10+, FFmpeg, and ffprobe |
+| Deterministic alpha processing | Python and Pillow |
+| Geometric camera / blocking previews | Blender |
+
+Install only what your task needs. A written production package and a finished video are separate deliverables; generated motion, lip-sync, and sound still need actual review.
+
+## Built in the open
+
+This workflow draws on [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance), [Emily2040/seedance-2.0](https://github.com/Emily2040/seedance-2.0), [zenstory-ai/drama-skills](https://github.com/zenstory-ai/drama-skills), [liangdabiao/Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator), [dexhunter/seedance2-skill](https://github.com/dexhunter/seedance2-skill), and [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage). Thank you to their authors.
+
+See [source attribution and third-party notices](THIRD_PARTY_NOTICES.md) for scope, pinned versions, and licenses. Original work is [MIT licensed](LICENSE); third-party terms are preserved. Independent project; not an official Seedance / Jimeng product.
+
+**Made something with it?** [Share a workflow or suggest an improvement](CONTRIBUTING.md). Reproducible observations help make the methods better.
+
+---
+
+<p align="center"><strong>If this helps you make a better video, give the project a star.</strong><br>
+It helps other creators find the workflow.<br><br>
+<a href="https://github.com/sirsws/seedance-video-skill">Star on GitHub</a> ·
+<a href="https://github.com/sirsws/seedance-video-skill/issues">Share feedback</a> ·
+<a href="README.zh-CN.md">阅读中文版</a></p>
