@@ -2,7 +2,7 @@
 
 **English · [简体中文](THIRD_PARTY_NOTICES.zh-CN.md)**
 
-Maintained by **邵看人生 (Shao Kan Ren Sheng / sirsws)**. Original writing and independently implemented scripts are provided under the [MIT license](LICENSE).
+Maintained by **SIRSWS**. Original writing and independently implemented scripts are provided under the [MIT license](LICENSE).
 
 The skill incorporates adapted material from **LearnPrompt/awesome-seedance**, **Emily2040/seedance-2.0**, and **zenstory-ai/drama-skills**, and preserves the MIT notice for **dexhunter/seedance2-skill**, which informed reference and prompt methods. Original copyright and permission notices are bundled inside the skill so they remain present in standalone installations.
 

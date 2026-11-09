@@ -18,7 +18,7 @@ An Agent Skill for directing AI videos, from the first idea to prompts, footage 
 <img src="https://img.shields.io/badge/English_%2B_中文-F2E8D5?style=flat-square&amp;labelColor=244A43" alt="English and Chinese guides">
 </p>
 
-Created by **[邵看人生 · Shao Kan Ren Sheng](https://github.com/sirsws)**, an AI video creator on Seedance / Jimeng. An independently maintained workflow developed through ongoing AI video creation.
+Created by **[SIRSWS](https://github.com/sirsws)**, an AI video creator on Seedance / Jimeng. An independently maintained workflow developed through ongoing AI video creation.
 
 ## Make the scene worth watching
 
